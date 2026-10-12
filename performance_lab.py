@@ -154,6 +154,10 @@ def add_n_items(n):
 
 """
 Time and Space Analysis for problem 4:
+- Best-case: O(n) because all n items need to be added.
+- Worst-case: O(n) because even with resizing, the total
+  amount of copying grows with the number of items.
+- Average-case: O(n) since each item gets added once.
 - When do resizes happen? The list resizes whenever
   it reaches its capacity. It starts at 2 and doubles
   to 4, 8, 16, and so on.
